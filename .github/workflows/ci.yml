@@ -37,5 +37,8 @@ jobs:
           </settings>
           EOF
 
+      - name: Run Checkstyle
+        run: mvn checkstyle:check
+
       - name: Build and deploy
         run: mvn deploy
